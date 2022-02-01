@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Meu Contador</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: black;
+        color: white;
+        place-items: center;
+      }
+
+
+      section {
+          background-color: rgba(255,255,255,0.2);
+          padding: 20px;
+      }
+      .box{
+          border: 2px solid white;
+          width: 300px;
+          height: 200px;
+          border-radius: 10px;
+          transition-duration: 2s;
+      }
+      .box:hover{
+          background-color: rgb(87, 87, 87);
+          transition-duration: 1s;
+      }
+      h1{
+          margin-left: 30%;
+      }
+      p{
+          margin-left: 45%;
+          font-size: 50px;
+      }
+      .boxBtn{
+          margin-left: 15%;
+      }
+      .btn{
+          border: none;
+          border-radius: 10px;
+          width: 70px;
+          height: 30px;
+          transition-duration: 0.5s;
+      }
+      .btn:hover{
+        width: 75px;
+        height: 35px;
+        transition-duration: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+    <br>
+    <h1>Contador</h1>
+    <br>
+    <p id="abc">0</p>
+    <br>
+    <div class="boxBtn">
+    <button class="btn" onclick="diminuir()">Menos</button>
+    <button class="btn" onclick="add()">Mais</button>
+    <button class="btn" onclick="zerar()">Zerar</button>
+    </div>
+    </section>
+    </div>
+    <script src="script.js"></script>
+ </body>
+ 
+</html>

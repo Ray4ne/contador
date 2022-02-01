@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Contador</title>
+    <style>
+      * {
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: white;
+        background-color: brown;
+        place-items: center;
+      }
+
+      section {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px;
+        }
+
+      p {
+        font-size: 125px;
+      }
+
+      button {
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 5px 5px 3px;
+      }
+    
+      h1 {
+        font-size: 40px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+      }
+
+      .btn:hover {
+        width: 80px;
+        height: 40px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>
+        Contador 
+      </h1>
+      <p id="resultado">0</p>
+      <button class="btn" onclick="diminuir()">Menos</button>
+      <button class="btn" onclick="resetar()">zerar</button>
+      <button class="btn" onclick="aumentar()">mais</button>
+    </section>
+    <script src="script1.js"></script>
+  </body>
+</html
